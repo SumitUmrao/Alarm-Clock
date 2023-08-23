@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Balsamiq+Sans:wght@700&family=IBM+Plex+Sans:wght@300&family=Roboto:wght@700&family=Work+Sans:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Balsamiq+Sans:wght@700&family=Fredericka+the+Great&family=IBM+Plex+Sans:wght@300&family=Roboto:wght@700&family=Work+Sans:ital,wght@1,200&display=swap');
+
+
+*{
+   margin: 0;
+   padding: 0; 
+   color: white;
+   box-sizing: border-box;
+   font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgba(40, 100, 116, 0.907);
+}
+
+h1{
+    position: absolute;
+    left: 43%;
+    top: 12%;
+    font-size: 2.5em;
+    text-decoration: dotted;
+
+}
+
+.hide{
+    display: none;
+}
+
+.main{
+    background-color: rgb(218, 212, 200);
+    width: 90%;
+    height: auto;
+    max-width: 30em;
+    min-height: 25em;
+    padding: 3em 5em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,-52%);
+    border-radius: 20%;
+}
+    
+.currentTime{
+    color: rgb(44, 134, 134);
+    position: absolute;
+    left:4.5em;
+    top:0.2em;
+    font-size: 2em;
+    font-family: 'Amatic SC', cursive;
+font-family: 'Balsamiq Sans', cursive;
+font-family: 'Fredericka the Great', cursive;
+font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Work Sans', sans-serif;
+    
+}
+
+.timer-display{
+    font-size: 2.6em;
+    text-align: center;
+    box-shadow: 0 0 20px;
+    margin: 10px;
+    padding: 10px 30px;
+    font-family: 'Roboto', sans-serif, 'Work Sans', sans-serif;
+    background-color: white;
+    color: rgb(228, 162, 75);
+    border-radius: 0.8em;
+}
+
+.inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.inputs input{
+    width: 3em;
+    font-size: 1.5em;
+    border: 0;
+    border-radius: 0.2em;
+    padding: 0.2em 0.1em;
+    box-shadow: 0.5px 0.5px 0.5px 1px;
+    color: rgba(221, 148, 84, 1);
+}
+
+#set{
+    background-color: rgb(215, 219, 213);
+    border: none;
+    padding: 1em 2.5em;
+    display: block;
+    margin: 1.5em auto 0 auto;
+    border-radius: 0.8em;
+    font-size: larger;
+    box-shadow: 0.5px 0.5px 1.5px 2px;
+    color: rgb(226, 164, 82);
+}
+
+.upcomingAlarm{
+    margin: 1em ;
+    color: darkcyan;
+    position: absolute;
+    left: 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    bottom: 5px;
+}
+
+.alarm input[type="checkbox"] {
+    margin: 5px;
+    padding: 2px;
+    appearance: none;
+    height: 1.3em;
+    width: 3em;
+    background-color: #e2e2ec;
+    border-radius: 1em;
+    position: absolute;
+    cursor: pointer;
+    outline:lightcoral;
+    right: 50px;
+  }
+
+
+  .alarm input[type="checkbox"]:before {
+    position: absolute;
+    content: "";
+    background-color: #757683;
+    height: 0.8em;
+    width: 0.8em;
+    border-radius: 50%;
+    top: 0.25em;
+    left: 0.25em;
+  }
+
+
+  .alarm input[type="checkbox"]:checked {
+    background-color: #d2e2ff;
+  }
+  
+  
+  .alarm input[type="checkbox"]:checked:before {
+    background-color: #f3ab38;
+    left: 2em;
+  }
+
+
+  .deleteButton {
+    background-color:transparent;
+    font-size: 1.5em;
+    color: #2cbcc1;
+    border: none;
+    cursor: pointer;
+    
+  }
